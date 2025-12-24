@@ -39,43 +39,29 @@ Deploy the end-to-end solution on cloud infrastructure
 
 High-level workflow:
 
-Data Collection
+Data Collection:
 
 Python scripts fetch Facebook comments via API
 
 Comments stored in SQL database with timestamps
 
-Sentiment Analysis Pipeline
+Sentiment Analysis Pipeline:
 
 Hourly batch of comments passed to a fine-tuned BERT model
 
-Sentiment classified into:
+Sentiment classified into: Negative, Neutral, Positive, Very Positive
 
-Negative
-
-Neutral
-
-Positive
-
-Very Positive
-
-Backend Orchestration
+Backend Orchestration:
 
 Laravel controllers execute Python scripts
 
 Scheduled jobs automate scraping and inference
 
-Data Storage
+Data Storage:
 
-SQL database stores:
+SQL database stores: Raw comments, Hourly sentiment aggregates, Daily and monthly summaries
 
-Raw comments
-
-Hourly sentiment aggregates
-
-Daily and monthly summaries
-
-Frontend Dashboard
+Frontend Dashboard:
 
 AJAX-powered Laravel views
 
@@ -129,39 +115,15 @@ Works on desktop and mobile devices
 
 🛠️ Technologies Used
 
-Data & ML
+Data & ML:Python, TensorFlow, Hugging Face Transformers, Pandas, NumPy
 
-Python
+Backend: Laravel (PHP), REST APIs, Cron jobs / scheduled tasks
 
-TensorFlow
+Frontend: Laravel Blade, jQuery & AJAX, Chart.js
 
-Hugging Face Transformers
+Database: SQL (relational schema for comments & sentiment metrics)
 
-Pandas, NumPy
-
-Backend
-
-Laravel (PHP)
-
-REST APIs
-
-Cron jobs / scheduled tasks
-
-Frontend
-
-Laravel Blade
-
-jQuery & AJAX
-
-Chart.js
-
-Database
-
-SQL (relational schema for comments & sentiment metrics)
-
-Cloud & Deployment
-
-AWS EC2 (Windows Server 2022)
+Cloud & Deployment: AWS EC2 (Windows Server 2022)
 
 📁 Repository Structure
 ├── notebooks/
@@ -176,18 +138,6 @@ AWS EC2 (Windows Server 2022)
 ├── dashboard/
 │ 
 └── README.md
-
-🚀 How to Run (High-Level)
-
-Configure API credentials (Facebook Graph API)
-
-Set up SQL database schema
-
-Run Python scripts for scraping and sentiment inference
-
-Schedule Laravel jobs for hourly execution
-
-Launch Laravel application to access dashboard
 
 📈 Key Outcomes
 
