@@ -125,20 +125,6 @@ Database: SQL (relational schema for comments & sentiment metrics)
 
 Cloud & Deployment: AWS EC2 (Windows Server 2022)
 
-📁 Repository Structure
-├── notebooks/
-│   ├── comments_scraper.ipynb
-│   └── fine_tuning_model_building.ipynb
-│
-├── backend/
-│   ├── Laravel Controllers
-│   ├── Routes
-│   └── Views
-│
-├── dashboard/
-│ 
-└── README.md
-
 📈 Key Outcomes
 
 Successfully automated real-time sentiment monitoring
