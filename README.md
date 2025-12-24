@@ -143,5 +143,4 @@ Deployed a production-style ML pipeline integrating Python and Laravel
 📬 Contact
 
 Manuja Palamakumbura
-Data Analyst | BI Analyst | ML & Analytics Projects
 🔗 LinkedIn: https://www.linkedin.com/in/manuja-palamakumbura/
